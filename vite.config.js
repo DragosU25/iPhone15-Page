@@ -4,7 +4,7 @@ import react from "@vitejs/plugin-react";
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "/iPhone15-Page",
+  base: "/iPhone15-Page/",
   plugins: [
     react(),
     sentryVitePlugin({
@@ -12,7 +12,6 @@ export default defineConfig({
       project: "javascript-react",
     }),
   ],
-
   build: {
     outDir: "dist",
     sourcemap: true,
